@@ -1,0 +1,11 @@
+<p>
+  home works!
+ </p>
+  <table>
+  <thead><th>ID:</th><th>NAME:</th></thead>
+
+  <tr *ngFor="let u of user">
+  <td>{{u.id}}</td><td><a routerLink="/about/{{u.username}}/{{u.id}}">{{u.username}}</a></td>
+  </tr>
+  </table>
+
